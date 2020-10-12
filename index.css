@@ -1,0 +1,16 @@
+body {
+  border-top: 3px solid lawngreen;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-top: 25px;
+  vertical-align: center;
+}
+
+#about {
+  background-color: lightblue;
+  height: 100px;
+}
