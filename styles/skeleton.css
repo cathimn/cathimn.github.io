@@ -160,18 +160,11 @@ p {
 a {
   text-decoration: none;
   transition: color .25s;
-  color: #ffcfdf; }
+  color: #ff81ab; }
   a:hover {
   text-decoration: underline;
   transition: color .25s;
-  color: #ff9ebe; }
-
-a.light-mode {
-  color: #ff9ebe;
-}
-a.light-mode:hover {
-  color: #ff6d9e;
-}
+  color: #ff81ab; }
 
 
 /* Buttons

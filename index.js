@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  let body = document.querySelector("body");
   let names = document.querySelectorAll(".name");
-  let cathimn = document.querySelectorAll(".cathimn")
   let notCathimn = document.querySelectorAll(".notcathimn");
-
-  let links = document.querySelectorAll("a");
-  links.forEach(link => link.classList.add("light-mode"));
+  let modeButton = document.getElementById("mode");
+  let moonSun = document.getElementById("moon-sun");
 
   names.forEach(name => name.addEventListener("mouseenter", () => {
     notCathimn.forEach(not => not.classList.add("hidden"));
@@ -14,10 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     notCathimn.forEach(not => not.classList.remove("hidden"));
   }))
 
-  document.getElementById("mode").addEventListener("click", () => {
-    document.getElementById("mode").classList.toggle("light-mode");
-    document.getElementById("mode").classList.toggle("dark-mode");
-    document.querySelector("body").classList.toggle("light-mode")
-    document.querySelector("body").classList.toggle("dark-mode")
+  modeButton.addEventListener("click", () => {
+    modeButton.classList.toggle("light-mode");
+    modeButton.classList.toggle("dark-mode");
+    body.classList.toggle("light-mode")
+    body.classList.toggle("dark-mode")
+    moonSun.classList.toggle("fa-moon-o");
+    moonSun.classList.toggle("fa-sun-o");
   })
 })

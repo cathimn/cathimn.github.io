@@ -5,7 +5,7 @@ body.dark-mode {
 }
 
 body.light-mode {
-  background-color: rgb(255, 247, 247);
+  background-color: rgb(255, 253, 253);
   color: #222;
   transition: background-color .25s, color .25s;
 }
@@ -25,7 +25,7 @@ body.light-mode {
   font-size: 32px;
   font-weight: 600;
   line-height: 1em;
-  padding: 200px 0px 100px 0px;
+  padding: 200px 0 100px 0;
 }
 
 
@@ -33,16 +33,15 @@ a.name {
   font-size: 15px;
 }
 
+.cathimn,
 .name {
   cursor: pointer;
   font-size: 50px;
   font-weight: 900;
-  color: #ff9ebe;
+  color: #ff81ab;
 }
 
 .cathimn {
-  color: #ff9ebe;
-  font-size: 45px;
   transition: color .25s;
 }
 
@@ -53,4 +52,27 @@ a.name {
 .notcathimn.hidden {
   transition: opacity .25s;
   opacity: .25;
+}
+
+#mode {
+  margin: 0;
+  padding: 0 10px;
+  height: auto;
+  border-color: #ff81ab;
+  color: #ff81ab;
+  width: 45px;
+  font-size: 20px;
+}
+
+#links > a {
+  font-size: 30px;
+  margin-right: 25px;
+}
+
+#links, #projects {
+  font-size: 20px;
+  margin: 50px 0;
+}
+
+.project-card {
 }
