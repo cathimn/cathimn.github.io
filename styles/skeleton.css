@@ -124,8 +124,8 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(245, 245, 245); }
 
 
 /* Typography
@@ -158,9 +158,20 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
+  text-decoration: none;
+  transition: color .25s;
+  color: #ffcfdf; }
+  a:hover {
+  text-decoration: underline;
+  transition: color .25s;
+  color: #ff9ebe; }
+
+a.light-mode {
+  color: #ff9ebe;
+}
+a.light-mode:hover {
+  color: #ff6d9e;
+}
 
 
 /* Buttons

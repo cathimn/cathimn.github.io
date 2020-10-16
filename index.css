@@ -1,16 +1,56 @@
-body {
-  border-top: 3px solid lawngreen;
+body.dark-mode {
+  background-color: #222;
+  color: rgb(245, 245, 245);
+  transition: background-color .25s, color .25s;
 }
 
-nav {
+body.light-mode {
+  background-color: rgb(255, 247, 247);
+  color: #222;
+  transition: background-color .25s, color .25s;
+}
+
+#top {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
-  margin-top: 25px;
+  margin: 25px auto 0 auto;
   vertical-align: center;
 }
 
+#top > div > a {
+  margin: 0 20px;
+}
+
 #about {
-  background-color: lightblue;
-  height: 100px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1em;
+  padding: 200px 0px 100px 0px;
+}
+
+
+a.name {
+  font-size: 15px;
+}
+
+.name {
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: 900;
+  color: #ff9ebe;
+}
+
+.cathimn {
+  color: #ff9ebe;
+  font-size: 45px;
+  transition: color .25s;
+}
+
+.notcathimn {
+  transition: opacity .25s;
+}
+
+.notcathimn.hidden {
+  transition: opacity .25s;
+  opacity: .25;
 }
