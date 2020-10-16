@@ -75,4 +75,6 @@ a.name {
 }
 
 .project-card {
+  display: flex;
+  font-size: 14px;
 }
