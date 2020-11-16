@@ -1,13 +1,17 @@
 body.dark-mode {
-  background-color: #222;
-  color: rgb(245, 245, 245);
+  background-color: rgb(41, 38, 38);
+  color: rgb(255, 249, 249);
   transition: background-color .25s, color .25s;
 }
 
 body.light-mode {
-  background-color: rgb(255, 253, 253);
-  color: #222;
+  background-color: rgb(255, 249, 249);
+  color: rgb(41, 38, 38);
   transition: background-color .25s, color .25s;
+}
+
+p {
+  text-align: justify;
 }
 
 #top {
@@ -75,6 +79,40 @@ a.name {
 }
 
 .project-card {
+  padding: 20px;
   display: flex;
   font-size: 14px;
+  height: 250px;
+  background-color: transparent;
+  transition: background-color .25s;
+  margin: 20px 0;
+}
+
+.project-card:hover {
+  transition: background-color .25s;
+  background-color: #ff81ab25;
+}
+
+.project-card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0px 25px 15px;
+}
+
+.project-card > img {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1000px) {
+  .project-card {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .project-card > div {
+    padding: 10px;
+  }
+
 }

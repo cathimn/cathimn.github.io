@@ -12,7 +12,7 @@
   <title>cath lee</title>
 </head>
 
-<body class="light-mode">
+<body>
   <div class="container">
     <nav id="top">
       <a href="/" class="name">
@@ -20,18 +20,19 @@
       </a>
       <div style="font-weight: 600;">
         <a href="/">go back</a>
-        <button id="mode" class="light-mode">
-          <i id="moon-sun" class="fa fa-moon-o"></i>
+        <button id="mode">
+          <i id="moon-sun" class="fa"></i>
         </button>
       </div>
     </nav>
     <div>
       <h5>PROJECTS</h6>
-      <strong>Ka-feen</strong> (React, Redux, Python, Flask, SQLAlchemy) live | github<br />
+      <strong>Ka-feen</strong> (React, Redux, Python, Flask, SQLAlchemy)
+      <br />
+      <p>
+        <a href="https://ka-feen.herokuapp.com/">Live</a> | <a href="https://github.com/cathimn/ka-feen">GitHub</a>
+         - <span style="font-style: italic;">A platform to show support for your favorite independent creators inspired by Ko-fi</span></p>
       <ul>
-        <li>
-          A platform to show support for your favorite independent creators inspired by Ko-fi
-        </li>
         <li>
           Established customizable user pages and profiles available through JWT authentication allowing each user to represent
           themselves and their work
@@ -40,37 +41,77 @@
           Structured streamlined database models using PostgreSQL and SQLAlchemy to conduct efficient queries through RESTful APIs
         </li>
         <li>
-          Integrated AWS S3 for image hosting through a Flask/Python backend for scalability and reliability
+          Integrated AWS S3 for image hosting through a Flask/Python backend and the AWS SDK for Python boto3 for scalability
         </li>
       </ul>
-      Shinyday (React, Node.js, Express.js, Sequelize, AWS S3) live | github
-      Discover your next favorite independent music artist, inspired by Bandcamp
-      Designed a global search bar using Regex queries through Sequelize to find matching albums and artists for quicker user
-      navigation
-      Customized React components with thoughtful React state management and AWS S3 integration to stream music and allow
-      users to sample music before choosing to download or support
-      Secured user accounts with bcrypt hashing and salt to established private user sessions
       
-      WOGOS (React, Redux, Python, Flask, SQLAlchemy, React Bootstrap) live | github
-      Browse and purchase games for exclusively on Windows and Steam, inspired by GOG.com
-      Created flexible, custom React components both from pure HTML and CSS and adjusting React Bootstrap’s premade components
-      to suit the design language; usable across multiple pages ensuring a uniform user experience from browsing product
-      selection all the way through to completing a purchase
-      Wrote checks against the Redux store and information stored in local storage to provide a seamless cart experience after
-      login that prevents users from buying duplicate items
-      Added CSS animations to provide visual feedback that guided users through to checkout
+      <strong>Shinyday</strong> (React, Node.js, Express.js, Sequelize, AWS S3)
+      <br />
+      <p>
+        <a href="https://shinyday.herokuapp.com/">Live</a> | <a href="https://github.com/cathimn/shinyday">GitHub</a>
+         - <span style="font-style: italic;">Discover your next favorite independent music artist, inspired by Bandcamp</span></p>
+      <ul>
+        <li>
+          Designed a global search bar using Regex queries through Sequelize to find matching albums and artists for quicker user
+          navigation
+        </li>
+        <li>
+          Customized React components using React Context to manage state throughout the application
+        </li>
+        <li>
+          Implemented file upload to AWS S3 using Multer and Multer S3
+        </li>
+        <li>
+          Secured user accounts with bcrypt hashing before entering passwords into the PostgreSQL database through Sequelize
+        </li>
+      </ul>
       
-      EXPERIENCE
-      Primary Outsourcing Team Member
-      Natura-Like Dental Laboratory May 2019 - Feb 2020
-      Facilitated daily internal and external reports and correspondence with the company’s primary outsourcing partner to
-      ensure running biweekly case deadlines, communication ran from customers, technical teams, internal upper management,
-      and external partners
-      Improved workflow for entering daily casework enabling more time spent corresponding with clients and maintaining lines
-      of communication through to technical and managerial staff
+      <strong>WOGOS</strong> (React, Redux, Python, Flask, SQLAlchemy, React Bootstrap)
+      <br />
+      <p>
+        <a href="https://wogos.herokuapp.com/">Live</a> | <a href="https://github.com/kimd345/gog">GitHub</a>
+         - <span style="font-style: italic;">Browse and purchase games for exclusively on Windows and Steam, inspired by GOG.com</span></p>
+      <ul>
+        <li>
+          Created custom React components both from pure HTML and CSS and adjusted React Bootstrap’s premade components to be used
+          across the entire purchasing flow
+        </li>
+        <li>
+          Wrote checks against the Redux store and information stored in local storage to provide a seamless cart experience after
+          login that prevents users from buying duplicate items
+        </li>
+        <li>
+          Added CSS animations to provide visual feedback that guided users through to checkout
+        </li>
+      </ul>
       
-      EDUCATION
-      Full Stack Web Development - App Academy , 1000+ hour immersive full-stack web-development bootcamp | Oct 2020
+      <h5>EXPERIENCE</h5>
+      <strong>Primary Outsourcing Team Member</strong>
+      <br />
+      <p>
+        Natura-Like Dental Laboratory | <span style="font-style: italic;">May 2019 - Feb 2020</span></p>
+      <ul>
+        <li>
+          Facilitated daily internal and external reports and correspondence with the company’s primary outsourcing partner to
+          ensure running biweekly case deadlines, communication ran from customers, technical teams, internal upper management,
+          and external partners
+        </li>
+        <li>
+          Improved workflow for entering daily casework freeing up to 25% more of the workday spent corresponding with clients and
+          maintaining lines of communication through to technical and managerial staff
+        </li>
+      </ul>
+
+      <h5>EDUCATION</h5>
+      <strong>Full Stack Web Development</strong>
+      <br />
+      <p>
+        App Academy | <span style="font-style: italic;">Graduated October 2020</span>
+      </p>
+      <ul>
+        <li>1000+ hour immersive full-stack web-development bootcamp</li>
+      </ul>
+
     </div>
     </div>
   </div>
