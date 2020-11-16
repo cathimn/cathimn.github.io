@@ -45,6 +45,10 @@ a.name {
   color: #ff81ab;
 }
 
+.cathimn.pinker {
+  color: #ff5890;
+}
+
 .cathimn {
   transition: color .25s;
 }

@@ -2,10 +2,12 @@ let mode = document.cookie.split("=")[1];
 
 document.addEventListener("DOMContentLoaded", () => {
   let names = document.querySelectorAll(".name");
+  let cathimn = document.querySelectorAll(".cathimn");
   let notCathimn = document.querySelectorAll(".notcathimn");
   let body = document.querySelector("body");
   let modeButton = document.getElementById("mode");
   let moonSun = document.getElementById("moon-sun");
+  let clicked = false;
 
   (function() {
     if (!mode) {
@@ -19,22 +21,24 @@ document.addEventListener("DOMContentLoaded", () => {
     moonSun.classList.add(mode === "light-mode" ? "fa-sun-o" : "fa-moon-o")
   })();
 
-  let kafeen = document.getElementById("kafeen");
-  let shinyday = document.getElementById("shinyday");
-
-  kafeen.addEventListener("mouseenter", () => {
-    setTimeout(() => {
-      [""]
-    }, 250);
+  names.forEach(name => {
+    name.addEventListener("mouseenter", () => {
+      cathimn.forEach(letter => letter.classList.add("pinker"));
+      notCathimn.forEach(letter => letter.classList.add("hidden"));
+    });
+    
+    name.addEventListener("click", () => {
+      clicked = !clicked;
+    })
   })
-
-  names.forEach(name => name.addEventListener("mouseenter", () => {
-    notCathimn.forEach(not => not.classList.add("hidden"));
-  }))
   
   names.forEach(name => name.addEventListener("mouseleave", () => {
-    notCathimn.forEach(not => not.classList.remove("hidden"));
+    if (!clicked) {
+      cathimn.forEach(letter => letter.classList.remove("pinker"));
+      notCathimn.forEach(not => not.classList.remove("hidden"));
+    }
   }))
+
 
   modeButton.addEventListener("click", () => {
     if (modeButton.classList.contains("light-mode")) {

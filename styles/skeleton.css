@@ -159,12 +159,12 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   text-decoration: none;
-  transition: color .25s;
+  transition: color .25s, text-decoration .25s;
   color: #ff81ab; }
   a:hover {
   text-decoration: underline;
-  transition: color .25s;
-  color: #ff81ab; }
+  transition: color .25s, text-decoration .25s;
+  color: #ff5890; }
 
 
 /* Buttons
