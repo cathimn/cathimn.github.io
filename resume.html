@@ -34,11 +34,15 @@
          - <span style="font-style: italic;">A platform to show support for your favorite independent creators inspired by Ko-fi</span></p>
       <ul>
         <li>
-          Established customizable user pages and profiles available through JWT authentication allowing each user to represent
-          themselves and their work
+          Established customizable user pages allowing users to change displayed user information such as pictures, tags,
+        username, and create posts including image and text by making calls to internal APIs
         </li>
         <li>
-          Structured streamlined database models using PostgreSQL and SQLAlchemy to conduct efficient queries through RESTful APIs
+          Tracked individual sessions using JWTs in users’ local storage and checked against the database
+        </li>
+        <li>
+          Structured database models using PostgreSQL and SQLAlchemy with relationships to allow for smooth CRUD operations,
+        ensured user data is written securely with Werkzeug’s security utilities password hashing
         </li>
         <li>
           Integrated AWS S3 for image hosting through a Flask/Python backend and the AWS SDK for Python boto3 for scalability
@@ -51,15 +55,17 @@
         <a href="https://shinyday.herokuapp.com/">Live</a> | <a href="https://github.com/cathimn/shinyday">GitHub</a>
          - <span style="font-style: italic;">Discover your next favorite independent music artist, inspired by Bandcamp</span></p>
       <ul>
+        
         <li>
-          Designed a global search bar using Regex queries through Sequelize to find matching albums and artists for quicker user
-          navigation
+          Designed a global search bar with a call to the internal API and an npm package, match-sorter, to create a deterministic
+        way to quickly navigate through the website by album name or artist name
         </li>
         <li>
-          Customized React components using React Context to manage state throughout the application
+          Customized functional React components extensively using HTML and CSS as well as React Context to manage state
+        throughout the application and React Hooks for individual components
         </li>
         <li>
-          Implemented file upload to AWS S3 using Multer and Multer S3
+          Implemented file upload to AWS S3 using Multer and Multer S3 for user photos and also song and image files for artists
         </li>
         <li>
           Secured user accounts with bcrypt hashing before entering passwords into the PostgreSQL database through Sequelize
@@ -73,15 +79,21 @@
          - <span style="font-style: italic;">Browse and purchase games exclusively on Windows and Steam, inspired by GOG.com</span></p>
       <ul>
         <li>
-          Created custom React components both from pure HTML and CSS and adjusted React Bootstrap’s premade components to be used
-          across the entire purchasing flow
+        Created custom React components using HTML/CSS adhering to BEM conventions and adjusted React Bootstrap’s premade
+        components to be used across the entire purchasing flow for a uniform user interface and user experience
         </li>
         <li>
-          Wrote checks against the Redux store and information stored in local storage to provide a seamless cart experience after
-          login that prevents users from buying duplicate items
+        Added CSS animation and conditional styling to guide users to checkout in order to mimic the design of our inspiration
+        site
         </li>
         <li>
-          Added CSS animations to provide visual feedback that guided users through to checkout
+        Wrote checks against the Redux store and information stored in local storage to provide a seamless cart experience after
+        login that prevents users from buying duplicate items and allowed new users to browse the site and add items to their
+        cart before making an account
+        </li>
+        <li>
+        Discussed with teammates during daily stand ups during a one week sprint and worked with a dedicated advisor to decide
+        on features and scope, stayed in contact through additional correspondence for troubleshooting or debugging
         </li>
       </ul>
 
@@ -92,7 +104,8 @@
         App Academy | <span style="font-style: italic;">Graduated October 2020</span>
       </p>
       <ul>
-        <li>1000+ hour immersive full-stack web-development bootcamp</li>
+        <li>1000+ hour immersive full-stack web-development bootcamp with a 5% acceptance rate, covering concepts such as data
+        structures, algorithms, and test-driven development</li>
       </ul>
       
       <h5>EXPERIENCE</h5>
