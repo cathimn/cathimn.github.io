@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/skeleton.css">
   <link rel="stylesheet" href="index.css">
@@ -23,14 +28,14 @@
     </div>
   </nav>
   <div id="about">
-    Hello there!<br/>
-    <span class="name">
+    <span class="name serif">
       <span class="cathimn">cath</span>
       <span class="cathimn">i</span><span class="notcathimn">s</span>
       <span class="cathimn">m</span><span class="notcathimn">y</span>
       <span class="cathimn">n</span><span class="notcathimn">ame</span>
-    </span>
-    and I'm a full-stack software developer writing in 
+    </span>,
+    <br/>
+    and I'm a full-stack software developer writing in
     <span style="color: #F0DB4F;">JavaScript</span>,
     <span style="color: #e34f26">HTML</span>,
     <span style="color: #264de4;">CSS</span>,
@@ -46,7 +51,7 @@
     <a href="https://angel.co/u/cathimn/"><i class="fa fa-angellist"></i></a><br/>
     </h5>
     <div style="font-size: 16px;">
-      <a href="resume.html">my resume on the web</a>
+      <a href="resume.html">view my resume</a>
       or <a href="./assets/Lee_Catherine_Resume.pdf" download="">download as pdf</a>
     </div>
   </div>
@@ -56,10 +61,10 @@
       <img src="assets/kafeen1.png" classname="screenshot" alt="screenshot" height="250px">
       <div>
         <div>
-          <span style="font-size: 14px; font-weight: 600;">Ka-feen</span><br/>
+          <span class="project-title">Ka-feen</span><br/>
           <span>React, CSS, Flask, SQLAlchemy, PostgreSQL, AWS S3</span>
         </div>
-        <p>This project is based on the website Ko-fi where users can support creators with direct donations.
+        <p class="project-description">This project is based on the website Ko-fi where users can support creators with direct donations.
           The frontend is built with React (using hooks and context) and fully customized CSS.
           Static image hosting and uploading are facilitated through AWS S3 using Boto3 for Flask.
         </p>
@@ -72,10 +77,10 @@
       <img src="assets/shinyday1.png" classname="screenshot" alt="screenshot" height="250px">
       <div>
         <div>
-          <span style="font-size: 14px; font-weight: 600;">Shinyday</span><br/>
+          <span class="project-title">Shinyday</span><br/>
           <span>React, CSS, Express, Sequelize, PostgreSQL, AWS S3</span>
         </div>
-        <p>Shinyday is based on Bandcamp, a website for discovering and purchasing music from independent artists.
+        <p class="project-description">Shinyday is based on Bandcamp, a website for discovering and purchasing music from independent artists.
           This was built with Express for the backend and React for the frontend. Sequelize was used as the ORM to create a PostgreSQL database.
           CSS was custom built to match the appearance of Bandcamp as closely as possible.
         </p>
@@ -88,10 +93,10 @@
       <img src="assets/wogos1.png" classname="screenshot" alt="screenshot" height="250px">
       <div>
         <div>
-          <span style="font-size: 14px; font-weight: 600;">WOGOS</span><br/>
+          <span class="project-title">WOGOS</span><br/>
           <span>React, Redux, React Bootstrap, CSS, Flask, SQLAlchemy, PostgreSQL</span>
         </div>
-        <p>WOGOS is a group project made with <a href="https://github.com/kimd345">Dong Hyuk Kim</a> and <a href="https://github.com/about14sheep">Austin Burger</a>
+        <p class="project-description">WOGOS is a group project made with <a href="https://github.com/kimd345">Dong Hyuk Kim</a> and <a href="https://github.com/about14sheep">Austin Burger</a>
           inspired by GOG.com. We customized React Bootstrap components and wrote more custom CSS 
           to ensure a cohesive design language reusable throughout the application. The information for this website is 
           provided by <a href="https://rawg.io/">RAWG's API</a>.
