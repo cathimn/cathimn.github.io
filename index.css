@@ -13,8 +13,8 @@ body.dark-mode {
 }
 
 body.light-mode {
-  background-color: white;
-  /* background-color: rgb(255, 253, 253); */
+  /* background-color: white; */
+  background-color: rgb(255, 249, 249);
   color: rgb(41, 38, 38);
   transition: background-color .25s, color .25s;
 }
