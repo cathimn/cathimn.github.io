@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   (function() {
     if (!mode) {
-      document.cookie = "mode=light-mode";
-      body.classList.add("light-mode");
-      modeButton.classList.add("light-mode");
-      moonSun.classList.add("fa-sun-o");
+      document.cookie = "mode=dark-mode";
+      body.classList.add("dark-mode");
+      modeButton.classList.add("dark-mode");
+      moonSun.classList.add("fa-moon-o");
     }
     body.classList.add(mode);
     modeButton.classList.add(mode);
